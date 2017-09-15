@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.7.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+version = '1.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    springCloudVersion = 'Dalston.SR3'
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("org.springframework.boot:spring-boot-configuration-processor")
+    compile "de.codecentric:spring-boot-admin-server-ui:1.5.4"
+    compile "de.codecentric:spring-boot-admin-server:1.5.4"
+    compile("com.hazelcast:hazelcast")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+jar {
+    archiveName = 'adminserver.jar'
+}

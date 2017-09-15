@@ -1,0 +1,17 @@
+server:
+  port: 8880
+
+spring:
+  application:
+    name: spring-boot-admin-server
+  cloud:
+    config:
+      enabled: false
+  boot:
+    admin:
+      context-path: /adminserver
+      hazelcast:
+       members: hostname1, hostname2
+       enabled: true
+       application-store: spring-boot-admin-application-store
+       event-store: spring-boot-admin-event-store
