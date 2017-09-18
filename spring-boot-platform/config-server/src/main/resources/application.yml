@@ -1,0 +1,14 @@
+server:
+  port: 8881
+      
+spring:
+  application:
+    name: spring-boot-config-server
+    description: Microservice Config Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/valchkou/spring-boot-all/app-config-nonprod
+  config:
+    name: cloudconfig

@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: spring-boot-admin-server
+    description: Microservice Admin Server
   cloud:
     config:
       enabled: false

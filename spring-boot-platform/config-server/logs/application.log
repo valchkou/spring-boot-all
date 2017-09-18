@@ -1,0 +1,9 @@
+2017-09-18_16:55:09.769 [background-preinit] [, ,  ] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18_16:55:10.524 [main] [, ,  ] INFO  com.valchkou.configserver.Main - The following profiles are active: eugene
+2017-09-18_16:55:11.613 [main] [, ,  ] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18_16:55:11.617 [main] [, ,  ] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-09-18_16:55:11.701 [localhost-startStop-1] [, ,  ] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18_16:55:13.324 [main] [, ,  ] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8881"]
+2017-09-18_16:55:13.333 [main] [, ,  ] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8881"]
+2017-09-18_16:55:13.346 [main] [, ,  ] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18_16:55:13.364 [main] [, ,  ] INFO  com.valchkou.configserver.Main - Started Main in 4.309 seconds (JVM running for 6.253)

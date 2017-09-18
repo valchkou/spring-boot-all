@@ -29,9 +29,8 @@ ext {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-configuration-processor")
-    compile "de.codecentric:spring-boot-admin-server-ui:1.5.4"
-    compile "de.codecentric:spring-boot-admin-server:1.5.4"
-    compile("com.hazelcast:hazelcast")
+    compile('org.springframework.cloud:spring-cloud-config-server')
+    compile('org.springframework.security:spring-security-rsa')
 
     compile("org.codehaus.groovy:groovy")
 }
@@ -43,5 +42,5 @@ dependencyManagement {
 }
 
 jar {
-    archiveName = 'adminserver.jar'
+    archiveName = 'configserver.jar'
 }

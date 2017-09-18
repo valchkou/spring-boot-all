@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    max-active: 5
+    initial-size: 1
+    max-idle: 5
+    min-idle: 1
+    validation-query: select 1 from dual
+    url: jdbc:oracle:thin:@stinpt4:1521/st_INPt4
+    username: ifact
+    password: inbox
+  
+rest:
+  service:
+    data-processing:
+      url: http://tldpws11:8080
+    site-reference:
+      url: http://stws-test01.rctanalytics.com/site-reference      
+
+---
+spring:
+  profiles: TEST1
+  datasource:
+    url: jdbc:oracle:thin:@stinpt4:1521/st_INPt4
+    username: ifact
+    password: inbox
+  
+rest:
+  service:
+    data-processing:
+      url: http://tldpws11:8080
+    site-reference:
+      url: http://stws-test01.rctanalytics.com/site-reference
+empty: true
+---      
+spring:
+  profiles: TEST2
+empty: true
+---  
+spring:
+  profiles: TEST3
+empty: true
+---  
+spring:
+  profiles: TEST4
