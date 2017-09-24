@@ -44,6 +44,6 @@ def setupAppenders(logPath, logPattern) {
 
 def setupLoggers() {
     logger("com.valchkou", INFO)
-    logger("org.springframework", WARN)
-    root(INFO, ["FILE", "CONSOLE"])
+    logger("org.springframework", DEBUG)
+    root(DEBUG, ["FILE", "CONSOLE"])
 }

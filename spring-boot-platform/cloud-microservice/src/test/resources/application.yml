@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Spring Boot Cloud Microservice
+    title: Spring Boot Cloud Microservice
+    description: Sample Spring Boot Microservice 
