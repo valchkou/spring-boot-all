@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.7.RELEASE'
+        springBootVersion = '1.5.10.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -29,18 +29,18 @@ ext {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-configuration-processor")
-    compile "de.codecentric:spring-boot-admin-server-ui:1.5.4"
-    compile "de.codecentric:spring-boot-admin-server:1.5.4"
+    compile "de.codecentric:spring-boot-admin-server-ui:1.5.7"
+    compile "de.codecentric:spring-boot-admin-server:1.5.7"
     compile("com.hazelcast:hazelcast")
 
     compile("org.codehaus.groovy:groovy")
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-    }
-}
+//dependencyManagement {
+//    imports {
+//        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//    }
+//}
 
 jar {
     archiveName = 'adminserver.jar'

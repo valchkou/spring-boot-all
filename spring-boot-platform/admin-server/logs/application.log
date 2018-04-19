@@ -1,0 +1,117 @@
+2018-04-19_11:17:36.668 [background-preinit] [, ,  ] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-04-19_11:17:37.053 [main] [, ,  ] INFO  com.valchkou.adminserver.Main - No active profile set, falling back to default profiles: default
+2018-04-19_11:17:37.358 [main] [, ,  ] WARN  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.valchkou.adminserver.Main]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/cloud/commons/httpclient/HttpClientConfiguration.class] cannot be opened because it does not exist
+2018-04-19_11:17:37.370 [main] [, ,  ] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.valchkou.adminserver.Main]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/cloud/commons/httpclient/HttpClientConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:616)
+	at org.springframework.context.annotation.ConfigurationClassParser.processDeferredImportSelectors(ConfigurationClassParser.java:548)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:185)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.valchkou.adminserver.Main.main(Main.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/cloud/commons/httpclient/HttpClientConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:50)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:102)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:89)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:76)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:693)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getRelated(ConfigurationClassParser.java:917)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getAnnotationAttributes(ConfigurationClassParser.java:898)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:535)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:508)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:299)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:606)
+	... 15 common frames omitted
+2018-04-19_11:19:31.756 [background-preinit] [, ,  ] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-04-19_11:19:32.131 [main] [, ,  ] INFO  com.valchkou.adminserver.Main - No active profile set, falling back to default profiles: default
+2018-04-19_11:19:33.124 [main] [, ,  ] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-04-19_11:19:33.125 [main] [, ,  ] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-04-19_11:19:33.205 [localhost-startStop-1] [, ,  ] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-04-19_11:19:33.525 [main] [, ,  ] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-04-19_11:19:33.525 [main] [, ,  ] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-19_11:19:33.529 [main] [, ,  ] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-04-19_11:19:33.529 [main] [, ,  ] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-19_11:19:33.944 [main] [, ,  ] WARN  o.springframework.web.servlet.resource.ResourceHttpRequestHandler - Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2018-04-19_11:19:33.944 [main] [, ,  ] WARN  o.springframework.web.servlet.resource.ResourceHttpRequestHandler - Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2018-04-19_11:19:34.638 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/applications/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.get(java.lang.String)
+2018-04-19_11:19:34.639 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/applications],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.register(de.codecentric.boot.admin.model.Application,org.springframework.web.util.UriComponentsBuilder)
+2018-04-19_11:19:34.639 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/applications/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.unregister(java.lang.String)
+2018-04-19_11:19:34.639 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/applications],methods=[GET]}" onto public java.util.Collection<de.codecentric.boot.admin.model.Application> de.codecentric.boot.admin.registry.web.RegistryController.applications(java.lang.String)
+2018-04-19_11:19:34.640 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/journal],produces=[application/json]}" onto public java.util.Collection<de.codecentric.boot.admin.event.ClientApplicationEvent> de.codecentric.boot.admin.journal.web.JournalController.getJournal()
+2018-04-19_11:19:34.640 [main] [, ,  ] INFO  de.codecentric.boot.admin.web.PrefixHandlerMapping - Mapped "{[/adminserver/api/journal],produces=[text/event-stream]}" onto public org.springframework.web.servlet.mvc.method.annotation.SseEmitter de.codecentric.boot.admin.journal.web.JournalController.getJournalEvents()
+2018-04-19_11:19:34.724 [main] [, ,  ] WARN  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with key 'zuulEndpoint' has been registered as an MBean but has no exposed attributes or operations
+2018-04-19_11:19:34.782 [main] [, ,  ] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2018-04-19_11:19:34.789 [main] [, ,  ] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2018-04-19_11:19:34.812 [main] [, ,  ] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-04-19_11:19:34.834 [main] [, ,  ] INFO  com.valchkou.adminserver.Main - Started Main in 3.588 seconds (JVM running for 4.797)
+2018-04-19_11:19:52.284 [http-nio-8888-exec-1] [, ,  ] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-19_11:19:52.313 [http-nio-8888-exec-1] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_11:23:40.120 [http-nio-8888-exec-2] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_11:31:00.534 [http-nio-8888-exec-3] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_11:31:00.544 [http-nio-8888-exec-10] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_11:31:00.813 [http-nio-8888-exec-7] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:00.813 [http-nio-8888-exec-5] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:00.814 [http-nio-8888-exec-4] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:01.813 [http-nio-8888-exec-9] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:01.814 [http-nio-8888-exec-1] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:01.814 [http-nio-8888-exec-8] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:02.834 [http-nio-8888-exec-2] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:02.840 [http-nio-8888-exec-3] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:02.840 [http-nio-8888-exec-10] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:03.814 [http-nio-8888-exec-5] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:03.815 [http-nio-8888-exec-7] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:03.815 [http-nio-8888-exec-4] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:04.812 [http-nio-8888-exec-6] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:04.813 [http-nio-8888-exec-8] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:04.813 [http-nio-8888-exec-9] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:05.814 [http-nio-8888-exec-2] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:05.814 [http-nio-8888-exec-1] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:05.815 [http-nio-8888-exec-3] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:06.811 [http-nio-8888-exec-4] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:06.811 [http-nio-8888-exec-10] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:06.812 [http-nio-8888-exec-7] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:07.814 [http-nio-8888-exec-5] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/info
+2018-04-19_11:31:07.815 [http-nio-8888-exec-8] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/health
+2018-04-19_11:31:07.816 [http-nio-8888-exec-9] [, ,  ] WARN  o.s.cloud.netflix.zuul.filters.pre.PreDecorationFilter - No route found for uri: /adminserver/api/applications/34232c2a/metrics
+2018-04-19_11:31:08.357 [http-nio-8888-exec-6] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_11:54:16.720 [http-nio-8888-exec-3] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_11:54:16.726 [http-nio-8888-exec-2] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_11:54:24.410 [http-nio-8888-exec-9] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_13:14:55.306 [http-nio-8888-exec-7] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_13:15:02.716 [http-nio-8888-exec-6] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_13:15:02.718 [http-nio-8888-exec-6] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_13:17:30.048 [http-nio-8888-exec-6] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_13:17:30.055 [http-nio-8888-exec-10] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_13:17:38.199 [http-nio-8888-exec-3] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_13:34:54.869 [http-nio-8888-exec-10] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_13:35:02.707 [http-nio-8888-exec-3] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_13:35:02.709 [http-nio-8888-exec-3] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_13:50:11.989 [http-nio-8888-exec-10] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_13:50:12.000 [http-nio-8888-exec-6] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_13:50:20.636 [http-nio-8888-exec-2] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_13:51:42.955 [http-nio-8888-exec-2] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_13:51:44.901 [http-nio-8888-exec-3] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_13:51:50.826 [http-nio-8888-exec-4] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_15:18:14.932 [http-nio-8888-exec-1] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_15:18:14.942 [http-nio-8888-exec-10] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_15:19:04.621 [http-nio-8888-exec-8] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_15:19:31.009 [http-nio-8888-exec-10] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_15:19:33.056 [http-nio-8888-exec-5] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_15:19:36.727 [http-nio-8888-exec-2] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_15:59:16.444 [http-nio-8888-exec-9] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
+2018-04-19_16:01:30.270 [http-nio-8888-exec-10] [, ,  ] WARN  org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping - No routes found from RouteLocator
+2018-04-19_16:01:30.272 [http-nio-8888-exec-10] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - New Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] registered 
+2018-04-19_16:54:18.208 [http-nio-8888-exec-5] [, ,  ] INFO  de.codecentric.boot.admin.registry.ApplicationRegistry - Application Application [id=34232c2a, name=refile-server, managementUrl=http://10.5.47.129:8080/manage/, healthUrl=http://10.5.47.129:8080/manage/health/, serviceUrl=http://10.5.47.129:8080/] unregistered 
